@@ -1,0 +1,74 @@
+.portfolio {
+    &__buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__project {
+        // width: 450px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+            // width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+            // width: 370px;
+        }
+    }
+}
+
+.portfolio__btn {
+    padding: 6px 22px;
+
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--theme-heading);
+    background-color: var(--theme-bg-btn);
+
+    transition: color var(--typical-transition-duration) var(--typical-transition-timing-function),
+        background-color var(--typical-transition-duration) var(--typical-transition-timing-function),
+        box-shadow var(--typical-transition-duration) var(--typical-transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--theme-accent);
+        background-color: var(--theme-hover);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

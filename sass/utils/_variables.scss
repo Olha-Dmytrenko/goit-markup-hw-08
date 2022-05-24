@@ -1,0 +1,26 @@
+:root {
+    --theme-hover: #2196F3;
+    --theme-main: #757575;
+    --theme-heading: #212121;
+    --theme-logo: #000000;
+    --theme-accent: #FFFFFF;
+    --theme-bg-btn: #F5F4FA;
+    --theme-contacts: rgba(255, 255, 255, 0.6);
+    --theme-header-border: #ECECEC;
+    --theme-clients-border: #AFB1B8;
+    --theme-portfolio-border: #EEEEEE;
+    --theme-bg-bt-hover: #188CE8;
+    --theme-bg-team: #FFFFFF;
+    --theme-clients: #AFB1B8;
+    --theme-icons: #AFB1B8;
+    --theme-footer-icons: #FFFFFF;
+    --typical-transition-duration: 250ms;
+    --typical-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--theme-main);
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
